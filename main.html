@@ -1,16 +1,56 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <h1>Job Application Form</h1>
+    <form action="/submit-application" method="POST">
+        <!-- Name Field -->
+        <label for="name">Name *</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
+        <!-- Email Field -->
+        <label for="email">Email *</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Gender Field -->
+        <label>Gender *</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other" required>
+        <label for="other">Other</label><br><br>
+
+        <!-- Laptop Brands Dropdown -->
+        <label for="laptop">Laptop Brand</label><br>
+        <select id="laptop" name="laptop">
+            <option value="Apple">Apple</option>
+            <option value="Asus">Asus</option>
+            <option value="HP">HP</option>
+        </select><br><br>
+
+        <!-- Age Field -->
+        <label for="age">Age *</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <!-- Date of Birth Field -->
+        <label for="dob">Date of Birth *</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password *</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <!-- Portfolio URL Field -->
+        <label for="portfolio">Portfolio URL</label><br>
+        <input type="url" id="portfolio" name="portfolio"><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
 </body>
-
 </html>
